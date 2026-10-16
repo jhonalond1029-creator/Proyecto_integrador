@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisColegio</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <main class="login">
+
+        <form id="form-login" class="login-tarjeta" novalidate>
+
+            <section class="logo">
+                <img src="img/logo.png" alt="logo">
+            </section>
+            <h1>Iniciar Sesión</h1>
+
+            <section class="campo">
+                <span class="campo-icono">👨🏻‍💻</span>
+                <input type="text" id="login-usuario" placeholder="Ingrese su usuario" required>
+            </section>
+
+            <section class="campo">
+                <span class="campo-icono">🔑</span>
+                <input type="password" id="login-contrasena" placeholder="Contraseña" required>
+                <button type="button" id="btn-ver-contrasena" class="campo-ojo" aria-label="Mostrar contraseña">👁️</button>
+            </section>
+
+            <a href="#" class="enlace-chico">¿Olvidaste tu contrasena?</a>
+
+            <p id="login-mensaje" class="mensaje" role="alert"></p>
+
+            <button type="submit" id="btn-login" class="btn btn-primario">
+                Iniciar Sesion
+            </button>
+            
+            <a href="#" id="btn-registro" class="btn btn-secundario">
+                Registrarse
+            </a>
+
+        </form>
+
+    </main>
+
+    <script src="js/validacion.js"></script>
+    <!-- <script src="js/datos.js"></script>
+    <script src="js/login.js"></script> -->
+    
+</body>
+</html>
